@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Michelle Tayburn | Web Developer</title>
+	<meta name="viewport" content="width=device=width, initial-scale=1">
+	<!-- ADD ICON -->
+	<link rel="icon" type="image/png" href="img/Favicon.png">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Playfair Display|Open Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700|Barlow:400,700" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/main_style.css">
+</head>
+<body id="top">
+	<header>
+		<nav>
+			<ul>
+        	<li>
+          		<a href="http://www.michelletayburn.com" target="_blank"><img src="img/Logo.png" alt=" " /></a>
+        	</li>
+      		</ul>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="developer" class="developer">
+		<div class="background-image" style="background-image: url('img/test.jpg');"></div>
+		<h1>Michelle Tayburn</h1>
+		<h3>Front End Web Developer</h3>
+	</section>
+	<section id="about" class="about">
+		<img src="img/Me.jpeg" alt="Michelle Tayburn" title="Michelle Tayburn" class="round" height="400" width="380">
+		<h3>Welcome to my Website!</h3>
+			
+		<p>Web development combines my two favorite things: design and technology.  Art has always been a part of my life, but after obtaining my Associate in Fine Art in 2011, I realized that it would not help in obtaining a career I was happy with.  Going back to school for computer science showed me that I could utilize my interest in art and design to code and implement websites and web applications.  Obtaining a career in web development will help me accomplish my goal of making a career change and to apply the knowledge I’ve learned in school within a professional environment.</p>  
+			
+		<p>I earned my bachelor’s degree in computer science with a Concentration in Web Development at Southern New Hampshire University in August 2020.  Going back to school has allowed me to accomplish my goal of learning essential web development skills to accompany my skills in art and design.  During my years at Southern New Hampshire University, I learned a lot about designing, implementing, and evaluating computing-based solutions for a variety of technology issues.  The course I took in website design helped me learn more about applying HTML and CSS to satisfy client and user requirements.  I also took a course in web and mobile user experience which helped me understand more about planning, researching, and implementing a web design project.  I also learned effective communication skills within a professional environment while studying project management and implementing an in-app purchases component for a mobile application in my advanced systems implementation course. In between classes, I have also taken advantage of free resources online to help develop my skills in JavaScript and jQuery.</p>  
+
+		<hr>
+	</section>
+	<section id="portfolio" class="portfolio">
+		<h3>Portfolio</h3>
+		<ul class="grid">
+			<li>
+				<a href="http://www.michelletayburn.com/SchoolProjects">
+				<img src="img/School_Project.png" alt="School Projects" title="School Projects" class="round" width="325" height="308"></a>
+				<h4>School Projects</h4>
+				<p>Take a look at some of the projects that I created while studying computer science at Southern New Hampshire University.</p>
+			</li>
+			<!--<li>
+				<img src="img/code_samples.png" alt="" title="" class="round" width="325" height="308">
+				<h4>Code Samples</h4>
+				<p>This section will have a picture and links to freelance projects that I have completed.</p>
+			</li>
+			<li>
+				<img src="img/website.png" alt="" title="" class="round" width="325" height="308">
+				<h4>Website Samples</h4>
+				<p>This section is another section to test stuff out with.</p>
+			</li>-->
+		</ul>
+		<hr>
+	</section>
+	<section id="contact" class="contact">
+		<h3>Contact me</h3>
+			<p>I am currently seeking internship opportunities</p>
+			<div class="container">
+				<form method="POST" action="contact.php">
+					<div><label>Your Name:</label></div>
+					<div><input type="text" name="myName" class="form-control" /></div>
+					
+					<div><label>Your Email:</label></div>
+					<div><input type="text" name="myEmail" class="form-control" /></div>
+		
+					<div><label>Message:</label></div>
+					<div><textarea cols="40" rows="5" name="myMessage" class="form-control"></textarea></div>
+					
+					<div class="float-right mt-2">
+						<input type="submit" value="Send" class="btn btn-primary" />
+					</div>
+				</form>
+			</div>
+		<hr>
+	</section>
+	<footer>
+		<ul>
+			<li><a href="https://twitter.com/MTayburn" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/michelle-tayburn-61080479/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-github-square"></i></a></li>
+		</ul>
+		<p>&copy;<script>document.write(new Date().getFullYear())</script> Michelle Tayburn</p>
+	</footer>
+
+<script type="text/javascript">
+		$(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
+
+</body>
+</html>
